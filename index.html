@@ -1,316 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Deepak Varma Chamarthi — Azure Data Engineer specializing in Azure Data Factory, Databricks, Synapse, ADLS Gen2, PySpark, SQL, Delta Lake and Azure DevOps." />
-  <meta name="theme-color" content="#f6f5f1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0a0d12" />
+  <meta name="description" content="Deepak Varma — Azure Data Engineer building dependable cloud data platforms with ADF, Databricks, PySpark, Delta Lake, Synapse and Azure DevOps." />
   <meta property="og:title" content="Deepak Varma — Azure Data Engineer" />
-  <meta property="og:description" content="Azure data engineering portfolio focused on scalable lakehouse, ETL/ELT, migration, orchestration and analytics-ready data platforms." />
+  <meta property="og:description" content="Cloud data engineering portfolio — pipelines, lakehouse architecture, migration, observability and analytics-ready data products." />
   <meta property="og:type" content="website" />
   <title>Deepak Varma — Azure Data Engineer</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://avatars.githubusercontent.com" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-  <header class="site-header" id="top">
-    <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="Deepak Varma home">
-        <span class="brand-mark">DV</span>
-        <span class="brand-text">Deepak Varma</span>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="identity" href="#top" aria-label="Deepak Varma home">
+        <span class="identity-mark">DV</span>
+        <span class="identity-copy"><strong>Deepak Varma</strong><small>Azure Data Engineer</small></span>
       </a>
 
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#work">Work</a>
         <a href="#stack">Stack</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-resume" href="assets/Deepak_Varma_Resume.pdf" download>Resume ↗</a>
       </nav>
+
+      <div class="topbar-actions">
+        <a class="icon-link" href="https://github.com/Deepak5039" target="_blank" rel="noreferrer" aria-label="GitHub profile">GH</a>
+        <a class="resume-pill" href="assets/Deepak_Varma_Resume.pdf" download>Resume <span>↘</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero shell" aria-labelledby="hero-title">
+  <main id="top">
+    <section class="hero shell">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> Open to Azure Data Engineering opportunities</div>
-        <h1 id="hero-title">I build reliable data platforms on <span>Azure.</span></h1>
-        <p class="hero-lead">Azure Data Engineer with 3 years of IT experience across ETL/ELT, lakehouse design, cloud migration, orchestration and performance tuning for banking and financial-services data.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">View selected work</a>
-          <a class="button button-secondary" href="assets/Deepak_Varma_Resume.pdf" download>Download resume</a>
+        <div class="availability"><span class="pulse"></span> Open to Azure Data Engineering roles</div>
+        <p class="kicker">AZURE · LAKEHOUSE · ETL/ELT · DATA PLATFORMS</p>
+        <h1>Engineering data systems that stay <em>reliable</em> under real-world complexity.</h1>
+        <p class="hero-sub">I’m an Azure Data Engineer with 3 years of IT experience across cloud migration, enterprise ETL/ELT, PySpark transformation, Delta Lake, orchestration and analytics delivery for banking and financial-services data.</p>
+        <div class="hero-cta">
+          <a href="#work" class="cta-primary magnetic"><span>Explore my work</span><b>↘</b></a>
+          <a href="mailto:Deepakvarma0621@gmail.com" class="cta-secondary">Let’s talk <span>↗</span></a>
         </div>
-        <div class="hero-meta" aria-label="Career highlights">
+        <div class="hero-metrics">
           <div><strong>3 yrs</strong><span>IT experience</span></div>
-          <div><strong>BFSI</strong><span>domain delivery</span></div>
-          <div><strong>Azure</strong><span>data platform focus</span></div>
+          <div><strong>BFSI</strong><span>delivery context</span></div>
+          <div><strong>Azure</strong><span>platform focus</span></div>
         </div>
       </div>
 
-      <aside class="hero-card reveal" aria-label="Profile summary">
-        <div class="system-visual" aria-label="Azure data platform visual">
-          <div class="visual-grid"></div>
-          <span class="flow-node node-source">Sources</span>
-          <span class="flow-node node-adf">ADF</span>
-          <span class="flow-node node-lake">ADLS</span>
-          <span class="flow-node node-dbx">DBX</span>
-          <span class="flow-node node-serve">SQL / BI</span>
-          <span class="flow-line line-a"></span>
-          <span class="flow-line line-b"></span>
-          <span class="flow-line line-c"></span>
-          <span class="flow-line line-d"></span>
-          <div class="visual-caption"><span>AZURE DATA PLATFORM</span><strong>Ingest → Transform → Serve</strong></div>
+      <div class="hero-system reveal" data-tilt>
+        <div class="system-header">
+          <div><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span></div>
+          <span>production_data_platform.yaml</span>
+          <span class="system-status">healthy</span>
         </div>
-        <div class="hero-card-body">
-          <p class="mono-label">CURRENT FOCUS</p>
-          <p>Scalable ingestion, Delta Lake transformations, metadata-driven pipelines, CI/CD and analytics-ready data models.</p>
-          <div class="availability-row"><span>Oct 2024 — Present</span><span>India</span></div>
+
+        <div class="system-canvas">
+          <svg viewBox="0 0 560 470" role="img" aria-label="Azure data pipeline diagram">
+            <defs>
+              <linearGradient id="pipe" x1="0" x2="1">
+                <stop offset="0%" stop-color="#4EA1FF" stop-opacity=".3"/>
+                <stop offset="50%" stop-color="#7A8CFF" stop-opacity=".9"/>
+                <stop offset="100%" stop-color="#4EA1FF" stop-opacity=".3"/>
+              </linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <g class="grid-lines" opacity=".3">
+              <path d="M40 70H520M40 150H520M40 230H520M40 310H520M40 390H520"/>
+              <path d="M80 40V430M180 40V430M280 40V430M380 40V430M480 40V430"/>
+            </g>
+            <g class="pipes" fill="none" stroke="url(#pipe)" stroke-width="2.2">
+              <path d="M110 110C170 110 170 180 235 180"/>
+              <path d="M110 240C165 240 175 195 235 195"/>
+              <path d="M110 350C175 350 180 220 235 210"/>
+              <path d="M325 190C390 190 385 125 445 125"/>
+              <path d="M325 205C390 205 395 235 445 235"/>
+              <path d="M325 220C390 220 390 345 445 345"/>
+            </g>
+            <g class="flow-particles" filter="url(#glow)">
+              <circle r="3" fill="#7CC4FF"><animateMotion dur="3.5s" repeatCount="indefinite" path="M110 110C170 110 170 180 235 180"/></circle>
+              <circle r="3" fill="#9C9CFF"><animateMotion dur="4.1s" repeatCount="indefinite" path="M110 350C175 350 180 220 235 210"/></circle>
+              <circle r="3" fill="#7CC4FF"><animateMotion dur="3.8s" repeatCount="indefinite" path="M325 190C390 190 385 125 445 125"/></circle>
+              <circle r="3" fill="#9C9CFF"><animateMotion dur="4.4s" repeatCount="indefinite" path="M325 220C390 220 390 345 445 345"/></circle>
+            </g>
+          </svg>
+
+          <div class="sys-node node-sources"><small>sources</small><strong>SQL · REST · CSV</strong><span>ingestion endpoints</span></div>
+          <div class="sys-node node-adf"><small>orchestrate</small><strong>Azure Data Factory</strong><span>metadata-driven</span></div>
+          <div class="sys-node node-dbx"><small>transform</small><strong>Databricks + PySpark</strong><span>Delta processing</span></div>
+          <div class="sys-node node-lake"><small>store</small><strong>ADLS Gen2</strong><span>bronze / silver / gold</span></div>
+          <div class="sys-node node-serve"><small>serve</small><strong>Synapse · Azure SQL</strong><span>analytics layer</span></div>
         </div>
-      </aside>
-    </section>
 
-    <section class="signal-band" aria-label="Core tools">
-      <div class="shell signal-track">
-        <span>Azure Data Factory</span><i></i><span>Databricks</span><i></i><span>PySpark</span><i></i><span>Delta Lake</span><i></i><span>Synapse</span><i></i><span>ADLS Gen2</span><i></i><span>Azure DevOps</span>
-      </div>
-    </section>
-
-    <section class="section shell" id="profile">
-      <div class="section-label reveal">01 / PROFILE</div>
-      <div class="section-grid">
-        <h2 class="section-title reveal">From raw data to trusted, analytics-ready products.</h2>
-        <div class="section-copy reveal">
-          <p>I design and maintain Azure data workflows that move data securely from source systems into governed storage and analytical layers. My work spans REST APIs, CSV and relational databases through ADF orchestration, Databricks transformation, ADLS storage, Azure SQL and downstream BI consumption.</p>
-          <p>I care about the engineering details recruiters and teams actually need: repeatable deployment, data validation, monitoring, schema evolution, cost-aware processing and pipelines that are easy to operate after go-live.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section shell" id="stack">
-      <div class="section-label reveal">02 / ENGINEERING STACK</div>
-      <div class="stack-grid">
-        <article class="stack-card reveal">
-          <span class="stack-index">01</span>
-          <h3>Cloud platform</h3>
-          <p>Azure Data Factory · Azure Databricks · ADLS Gen2 · Azure Synapse · Azure SQL · Key Vault · Logic Apps</p>
-        </article>
-        <article class="stack-card reveal">
-          <span class="stack-index">02</span>
-          <h3>Data processing</h3>
-          <p>PySpark · Spark SQL · Python · SQL · T-SQL · Delta Lake · Parquet · JSON · REST APIs</p>
-        </article>
-        <article class="stack-card reveal">
-          <span class="stack-index">03</span>
-          <h3>Data engineering</h3>
-          <p>ETL/ELT · Orchestration · Scheduling · CDC patterns · Data validation · Schema evolution · Dimensional modeling</p>
-        </article>
-        <article class="stack-card reveal">
-          <span class="stack-index">04</span>
-          <h3>Performance & delivery</h3>
-          <p>Partitioning · Caching · Cluster tuning · Delta optimization · Indexing · Git · Azure DevOps · CI/CD</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section shell" id="experience">
-      <div class="section-label reveal">03 / EXPERIENCE</div>
-      <div class="experience-layout">
-        <div class="experience-head reveal">
-          <p class="mono-label">OCT 2024 — PRESENT</p>
-          <h2>Associate Data Engineer</h2>
-          <p class="company">Pentagram Infotech Private Limited <span>/ Client: Capgemini</span></p>
-        </div>
-        <div class="experience-points reveal">
-          <div><span>01</span><p>Develop and optimize Azure-based ETL pipelines for structured and unstructured data workloads.</p></div>
-          <div><span>02</span><p>Build PySpark transformation workflows in Databricks and integrate curated outputs with ADLS and Azure SQL.</p></div>
-          <div><span>03</span><p>Design automated ingestion, transformation and validation workflows while partnering with business stakeholders on technical requirements.</p></div>
-          <div><span>04</span><p>Support deployment and operational quality through Azure DevOps CI/CD, monitoring, scheduling and SQL performance tuning.</p></div>
+        <div class="system-footer">
+          <span><i class="dot good"></i> pipelines online</span>
+          <span>CI/CD: Azure DevOps</span>
+          <span>secrets: Key Vault</span>
         </div>
       </div>
     </section>
 
-    <section class="section section-work" id="work">
+    <section class="ticker" aria-label="Technology stack highlights">
+      <div class="ticker-track">
+        <span>Azure Data Factory</span><i>✦</i><span>Databricks</span><i>✦</i><span>PySpark</span><i>✦</i><span>Delta Lake</span><i>✦</i><span>Azure Synapse</span><i>✦</i><span>ADLS Gen2</span><i>✦</i><span>Azure SQL</span><i>✦</i><span>Azure DevOps</span><i>✦</i>
+        <span>Azure Data Factory</span><i>✦</i><span>Databricks</span><i>✦</i><span>PySpark</span><i>✦</i><span>Delta Lake</span><i>✦</i><span>Azure Synapse</span><i>✦</i><span>ADLS Gen2</span><i>✦</i><span>Azure SQL</span><i>✦</i><span>Azure DevOps</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="about" class="section shell about-section">
+      <div class="section-number reveal">01</div>
+      <div class="section-heading reveal">
+        <span class="eyebrow">ABOUT</span>
+        <h2>I make complex data movement feel <em>predictable</em>.</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p class="lead-copy">My work sits where platform reliability, data quality and business usability meet.</p>
+        <p>I build and maintain Azure workflows that take data from REST APIs, CSV, relational databases and on-premises systems into governed storage, Databricks transformations, analytical models and BI-ready outputs.</p>
+        <p>I’m most effective when I can combine orchestration, transformation, observability and delivery discipline—so pipelines are not only built, but are easy to deploy, monitor, troubleshoot and extend.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section shell experience-section">
+      <div class="section-number reveal">02</div>
+      <div class="experience-title reveal">
+        <span class="eyebrow">EXPERIENCE</span>
+        <h2>3 years of hands-on data engineering.</h2>
+      </div>
+      <article class="experience-card reveal" data-tilt>
+        <div class="exp-aside">
+          <span>OCT 2024 — PRESENT</span>
+          <strong>Associate Data Engineer</strong>
+          <p>Pentagram Infotech Private Limited</p>
+          <small>Client: Capgemini</small>
+        </div>
+        <div class="exp-main">
+          <div class="exp-item"><b>01</b><div><h3>Cloud ETL / ELT</h3><p>Design and optimize Azure-based ingestion and transformation workflows for structured and unstructured data.</p></div></div>
+          <div class="exp-item"><b>02</b><div><h3>Databricks engineering</h3><p>Build PySpark workflows for cleansing, validation and scalable transformation, with curated outputs in ADLS and Azure SQL.</p></div></div>
+          <div class="exp-item"><b>03</b><div><h3>Migration & orchestration</h3><p>Support source-to-cloud migration using ADF, Self-Hosted Integration Runtime, triggers, reusable pipeline patterns and secure secret handling.</p></div></div>
+          <div class="exp-item"><b>04</b><div><h3>Delivery & operations</h3><p>Work across CI/CD, scheduling, monitoring, SQL performance tuning and stakeholder-driven requirements to keep data products production-ready.</p></div></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="work" class="section work-section">
       <div class="shell">
-        <div class="section-label reveal">04 / SELECTED ENTERPRISE WORK</div>
-        <div class="work-intro reveal">
-          <h2>Data engineering work built around scale, reliability and operating simplicity.</h2>
-          <p>Selected responsibilities from banking and financial-services data programs.</p>
+        <div class="section-number reveal">03</div>
+        <div class="work-heading reveal">
+          <div><span class="eyebrow">SELECTED WORK</span><h2>Built for enterprise data, not demo data.</h2></div>
+          <p>Two representative programs from my professional experience, plus a separate architecture lab showing how I approach modern Azure patterns.</p>
         </div>
 
-        <div class="project-list">
-          <article class="project-row reveal">
-            <div class="project-number">01</div>
-            <div class="project-main">
-              <div class="project-kicker">Enterprise data platform</div>
+        <div class="case-list">
+          <article class="case reveal">
+            <div class="case-index">01</div>
+            <div class="case-copy">
+              <span class="case-type">ENTERPRISE DATA PLATFORM</span>
               <h3>Enterprise Function Technology Platform Management</h3>
-              <p>End-to-end Azure data pipelines for on-premises migration, reusable ingestion, transformation, validation and operational alerting.</p>
-              <div class="tags"><span>ADF</span><span>Databricks</span><span>ADLS Gen2</span><span>Key Vault</span><span>PySpark</span><span>Azure DevOps</span></div>
+              <p>Azure pipelines for source migration, reusable ingestion, validation, transformation, alerting and business-ready datasets.</p>
+              <div class="chips"><span>ADF</span><span>Databricks</span><span>ADLS Gen2</span><span>Key Vault</span><span>PySpark</span><span>Azure DevOps</span></div>
             </div>
-            <button class="project-open" data-dialog="dialog-eft" aria-label="Open project details">↗</button>
+            <button class="case-open" type="button" data-dialog="eft-dialog"><span>View system</span><b>↗</b></button>
           </article>
 
-          <article class="project-row reveal">
-            <div class="project-number">02</div>
-            <div class="project-main">
-              <div class="project-kicker">Banking analytics</div>
+          <article class="case reveal">
+            <div class="case-index">02</div>
+            <div class="case-copy">
+              <span class="case-type">BANKING ANALYTICS</span>
               <h3>Prime Brokerage Data Platform</h3>
-              <p>Streaming and batch data workflows supporting warehouse transformations, proactive pipeline monitoring and analytics consumption.</p>
-              <div class="tags"><span>Delta</span><span>PySpark</span><span>Azure SQL</span><span>ADLS</span><span>Power BI</span><span>CI/CD</span></div>
+              <p>Streaming and batch-oriented data workflows supporting analytical transformation, monitoring and Power BI consumption.</p>
+              <div class="chips"><span>Delta</span><span>PySpark</span><span>Azure SQL</span><span>ADLS</span><span>Power BI</span><span>CI/CD</span></div>
             </div>
-            <button class="project-open" data-dialog="dialog-prime" aria-label="Open project details">↗</button>
+            <button class="case-open" type="button" data-dialog="prime-dialog"><span>View system</span><b>↗</b></button>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section shell" id="portfolio-lab">
-      <div class="section-label reveal">05 / PORTFOLIO LAB</div>
-      <div class="lab-head reveal">
-        <h2>Self-directed Azure architecture case studies.</h2>
-        <p>Designed to demonstrate modern patterns beyond day-to-day client work. These are portfolio concepts, not client engagements.</p>
+    <section class="section shell lab-section">
+      <div class="section-number reveal">04</div>
+      <div class="lab-heading reveal">
+        <span class="eyebrow">ARCHITECTURE LAB</span>
+        <h2>How I think beyond the ticket.</h2>
+        <p>These are self-directed architecture case studies—not client engagements—built to show design thinking around modern Azure data-platform patterns.</p>
       </div>
 
       <div class="lab-grid">
-        <article class="lab-card reveal">
-          <div class="lab-top"><span>CASE STUDY 01</span><span class="lab-badge">LAKEHOUSE</span></div>
+        <article class="lab-card reveal" data-tilt>
+          <div class="lab-top"><span>01 / LAKEHOUSE</span><b>↗</b></div>
+          <div class="lab-orbit" aria-hidden="true"><span></span><i></i></div>
           <h3>Metadata-Driven Medallion Lakehouse</h3>
-          <p>A configurable Bronze → Silver → Gold ingestion framework where new datasets are onboarded through metadata instead of duplicated pipeline logic.</p>
-          <div class="architecture">ADF → ADLS → Databricks → Delta → Synapse</div>
-          <button class="text-link project-open" data-dialog="dialog-lakehouse">Architecture notes ↗</button>
+          <p>Config-driven ingestion and reusable Bronze → Silver → Gold transformations designed to onboard new datasets without cloning pipeline logic.</p>
+          <div class="lab-flow">ADF <i>→</i> ADLS <i>→</i> Databricks <i>→</i> Delta <i>→</i> Synapse</div>
         </article>
 
-        <article class="lab-card reveal">
-          <div class="lab-top"><span>CASE STUDY 02</span><span class="lab-badge">NEAR REAL-TIME</span></div>
+        <article class="lab-card reveal" data-tilt>
+          <div class="lab-top"><span>02 / STREAMING</span><b>↗</b></div>
+          <div class="lab-orbit lab-orbit-b" aria-hidden="true"><span></span><i></i></div>
           <h3>Finance CDC Streaming Platform</h3>
-          <p>A change-data-capture design for continuously moving account events into Delta tables with checkpointing, deduplication and curated serving layers.</p>
-          <div class="architecture">CDC → Event Hub → Databricks → Delta → Power BI</div>
-          <button class="text-link project-open" data-dialog="dialog-cdc">Architecture notes ↗</button>
+          <p>Near real-time account event processing with checkpointing, deduplication, Delta storage and curated serving for downstream analytics.</p>
+          <div class="lab-flow">CDC <i>→</i> Event Hub <i>→</i> Databricks <i>→</i> Delta <i>→</i> BI</div>
         </article>
 
-        <article class="lab-card reveal">
-          <div class="lab-top"><span>CASE STUDY 03</span><span class="lab-badge">OBSERVABILITY</span></div>
-          <h3>Data Quality & Pipeline Control Tower</h3>
-          <p>A monitoring pattern that centralizes freshness, row-count, schema and validation checks with actionable alerts and run-level audit history.</p>
-          <div class="architecture">ADF Logs → Log Analytics → SQL → Power BI / Alerts</div>
-          <button class="text-link project-open" data-dialog="dialog-observe">Architecture notes ↗</button>
+        <article class="lab-card reveal" data-tilt>
+          <div class="lab-top"><span>03 / OBSERVABILITY</span><b>↗</b></div>
+          <div class="lab-orbit lab-orbit-c" aria-hidden="true"><span></span><i></i></div>
+          <h3>Data Quality Control Tower</h3>
+          <p>Centralized health monitoring for freshness, schema, row counts and validation checks, with run-level audit history and actionable alerts.</p>
+          <div class="lab-flow">ADF Logs <i>→</i> Monitor <i>→</i> SQL <i>→</i> Power BI / Alerts</div>
         </article>
       </div>
     </section>
 
-    <section class="section shell" id="credentials">
-      <div class="section-label reveal">06 / CREDENTIALS</div>
+    <section id="stack" class="section shell stack-section">
+      <div class="section-number reveal">05</div>
+      <div class="stack-heading reveal"><span class="eyebrow">ENGINEERING STACK</span><h2>Tools I use to move from source to trusted data product.</h2></div>
+      <div class="stack-matrix">
+        <article class="stack-row reveal"><span>01</span><h3>Cloud & orchestration</h3><p>Azure Data Factory · Azure Databricks · ADLS Gen2 · Azure Synapse · Azure SQL · Key Vault · Logic Apps</p></article>
+        <article class="stack-row reveal"><span>02</span><h3>Processing & querying</h3><p>PySpark · Spark SQL · Python · SQL · T-SQL · Delta Lake · Parquet · JSON · REST APIs</p></article>
+        <article class="stack-row reveal"><span>03</span><h3>Data engineering</h3><p>ETL/ELT · Ingestion · Orchestration · Scheduling · Validation · Schema evolution · Dimensional modeling</p></article>
+        <article class="stack-row reveal"><span>04</span><h3>Performance & delivery</h3><p>Partitioning · Caching · Cluster tuning · Delta optimization · Indexing · Git · Azure DevOps · CI/CD</p></article>
+      </div>
+    </section>
+
+    <section class="section shell credentials-section">
+      <div class="section-number reveal">06</div>
       <div class="credentials-grid">
-        <div class="credential-block reveal">
-          <h3>Certifications</h3>
+        <div class="credential-panel reveal">
+          <span class="eyebrow">CERTIFICATIONS</span>
           <ul>
-            <li><span>Microsoft</span> Azure AI Fundamentals</li>
-            <li><span>Google / Coursera</span> Data Analytics Professional Certificate</li>
-            <li><span>IABAC</span> Certified Data Analyst</li>
-            <li><span>HackerRank</span> SQL Certification</li>
+            <li><span>Microsoft</span><strong>Azure AI Fundamentals</strong></li>
+            <li><span>Google / Coursera</span><strong>Data Analytics Professional Certificate</strong></li>
+            <li><span>IABAC</span><strong>Certified Data Analyst</strong></li>
+            <li><span>HackerRank</span><strong>SQL Certification</strong></li>
           </ul>
         </div>
-        <div class="credential-block reveal">
-          <h3>Education</h3>
-          <div class="education-card">
-            <p class="mono-label">2020 — 2024</p>
-            <h4>B.Tech — Electronics & Communication Engineering</h4>
-            <p>Madanapalle Institute of Technology & Science</p>
-            <p class="muted">CGPA: 8.53 / 10</p>
-          </div>
+        <div class="education-panel reveal">
+          <span class="eyebrow">EDUCATION</span>
+          <p class="year">2020 — 2024</p>
+          <h3>B.Tech — Electronics & Communication Engineering</h3>
+          <p>Madanapalle Institute of Technology & Science</p>
+          <strong>CGPA 8.53 / 10</strong>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="shell contact-grid reveal">
-        <div>
-          <div class="section-label light">07 / CONTACT</div>
-          <h2>Building a data platform that needs to be dependable?</h2>
-        </div>
+    <section id="contact" class="contact-section">
+      <div class="shell contact-inner reveal">
+        <div class="contact-kicker"><span class="pulse"></span> Available for the right opportunity</div>
+        <h2>Need someone who can make your Azure data platform <em>boring in production</em>?</h2>
+        <p>That’s the goal: predictable pipelines, clear failure modes, clean deployments and data people can trust.</p>
         <div class="contact-actions">
-          <p>I’m open to Azure Data Engineer opportunities where I can own reliable ingestion, transformation and cloud data-platform delivery.</p>
-          <a class="contact-mail" href="mailto:Deepakvarma0621@gmail.com">Deepakvarma0621@gmail.com ↗</a>
-          <div class="contact-links">
-            <a href="https://github.com/Deepak5039" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="assets/Deepak_Varma_Resume.pdf" download>Resume ↓</a>
-          </div>
+          <a class="contact-primary magnetic" href="mailto:Deepakvarma0621@gmail.com"><span>Deepakvarma0621@gmail.com</span><b>↗</b></a>
+          <a class="contact-secondary" href="assets/Deepak_Varma_Resume.pdf" download>Download resume ↘</a>
         </div>
+        <div class="contact-foot"><span>India · Open to opportunities</span><a href="https://github.com/Deepak5039" target="_blank" rel="noreferrer">GitHub ↗</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <span>© <span id="year"></span> Deepak Varma Chamarthi</span>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
+  <footer class="footer"><div class="shell"><span>© <span id="year"></span> Deepak Varma</span><a href="#top">Back to top ↑</a></div></footer>
 
-  <dialog id="dialog-eft" class="project-dialog">
-    <button class="dialog-close" aria-label="Close dialog">×</button>
-    <p class="mono-label">ENTERPRISE FUNCTION TECHNOLOGY PLATFORM MANAGEMENT</p>
-    <h2>Reusable Azure ingestion and transformation platform.</h2>
+  <dialog id="eft-dialog" class="project-dialog">
+    <button class="dialog-close" type="button" aria-label="Close">×</button>
+    <span class="dialog-kicker">ENTERPRISE FUNCTION TECHNOLOGY PLATFORM MANAGEMENT</span>
+    <h2>Reusable ingestion, transformation and migration on Azure.</h2>
     <div class="dialog-grid">
-      <div><span>Challenge</span><p>Move data from on-premises SQL Server, REST APIs, CSV and relational sources into secure Azure storage and curated datasets.</p></div>
-      <div><span>Approach</span><p>ADF orchestration with Self-Hosted Integration Runtime, PySpark transformations in Databricks, ADLS Gen2 storage, metadata-driven workflows and Key Vault-backed secrets.</p></div>
-      <div><span>Reliability</span><p>Validation checks, trigger-based scheduling, Logic Apps email notifications and Azure DevOps CI/CD for repeatable releases.</p></div>
-      <div><span>Outcome</span><p>Modular pipelines and business-ready datasets designed to reduce manual deployment effort and improve operational consistency.</p></div>
+      <article><span>01</span><h3>Ingest</h3><p>Move data from on-prem SQL Server, REST APIs, CSV and relational sources through ADF and Self-Hosted Integration Runtime.</p></article>
+      <article><span>02</span><h3>Transform</h3><p>Clean, validate and transform data with PySpark in Databricks while persisting curated outputs in ADLS Gen2 and Azure SQL.</p></article>
+      <article><span>03</span><h3>Operate</h3><p>Use triggers, Logic Apps notifications and data validation checks to keep workflows observable and production-ready.</p></article>
+      <article><span>04</span><h3>Deliver</h3><p>Promote changes through Azure DevOps CI/CD and reusable pipeline patterns designed for lower manual effort and consistent deployment.</p></article>
     </div>
   </dialog>
 
-  <dialog id="dialog-prime" class="project-dialog">
-    <button class="dialog-close" aria-label="Close dialog">×</button>
-    <p class="mono-label">PRIME BROKERAGE</p>
-    <h2>Banking data workflows for streaming, warehousing and analytics.</h2>
+  <dialog id="prime-dialog" class="project-dialog">
+    <button class="dialog-close" type="button" aria-label="Close">×</button>
+    <span class="dialog-kicker">PRIME BROKERAGE DATA PLATFORM</span>
+    <h2>Banking data engineering across batch, streaming and analytical workloads.</h2>
     <div class="dialog-grid">
-      <div><span>Challenge</span><p>Process large volumes of banking and risk data across operational and analytical workloads while maintaining availability and performance.</p></div>
-      <div><span>Approach</span><p>ADF, Databricks, Delta/PySpark, ADLS and Azure SQL for ingestion, transformation and analytical serving.</p></div>
-      <div><span>Performance</span><p>SQL tuning using indexing and partitioning techniques, with job scheduling, monitoring and preventive performance checks.</p></div>
-      <div><span>Delivery</span><p>Git, Azure Boards, TDD practices and CI/CD supported automated, quality-focused delivery in Agile/Scrum teams.</p></div>
-    </div>
-  </dialog>
-
-  <dialog id="dialog-lakehouse" class="project-dialog">
-    <button class="dialog-close" aria-label="Close dialog">×</button>
-    <p class="mono-label">SELF-DIRECTED ARCHITECTURE CASE STUDY</p>
-    <h2>Metadata-Driven Medallion Lakehouse</h2>
-    <div class="dialog-grid">
-      <div><span>Pattern</span><p>Store dataset configuration in a control table so one reusable ADF framework can ingest many sources.</p></div>
-      <div><span>Bronze</span><p>Land immutable source data in ADLS with ingestion timestamps and source lineage.</p></div>
-      <div><span>Silver</span><p>Use Databricks/PySpark for type enforcement, deduplication, schema handling and Delta MERGE logic.</p></div>
-      <div><span>Gold</span><p>Publish dimensional and business-ready tables for Synapse or BI consumers with auditability across layers.</p></div>
-    </div>
-  </dialog>
-
-  <dialog id="dialog-cdc" class="project-dialog">
-    <button class="dialog-close" aria-label="Close dialog">×</button>
-    <p class="mono-label">SELF-DIRECTED ARCHITECTURE CASE STUDY</p>
-    <h2>Finance CDC Streaming Platform</h2>
-    <div class="dialog-grid">
-      <div><span>Ingestion</span><p>Capture source changes into Event Hubs and persist raw events with durable offsets/checkpoints.</p></div>
-      <div><span>Processing</span><p>Databricks Structured Streaming applies deduplication, watermarking and schema enforcement.</p></div>
-      <div><span>Storage</span><p>Delta tables maintain ACID updates and history for account/event-level data products.</p></div>
-      <div><span>Serving</span><p>Curated aggregates are exposed to downstream SQL and Power BI workloads with freshness SLAs.</p></div>
-    </div>
-  </dialog>
-
-  <dialog id="dialog-observe" class="project-dialog">
-    <button class="dialog-close" aria-label="Close dialog">×</button>
-    <p class="mono-label">SELF-DIRECTED ARCHITECTURE CASE STUDY</p>
-    <h2>Data Quality & Pipeline Control Tower</h2>
-    <div class="dialog-grid">
-      <div><span>Signals</span><p>Capture pipeline run status, duration, row counts, data freshness and schema-change events.</p></div>
-      <div><span>Rules</span><p>Run configurable quality checks for nulls, uniqueness, allowed ranges and reconciliation counts.</p></div>
-      <div><span>Audit</span><p>Persist run-level metadata in a central control store to support root-cause analysis and SLA reporting.</p></div>
-      <div><span>Alerting</span><p>Route failures and threshold breaches to actionable notifications while exposing trends in Power BI.</p></div>
+      <article><span>01</span><h3>Process</h3><p>Build Azure workflows for large banking and risk datasets using ADF, Databricks, ADLS and Azure SQL.</p></article>
+      <article><span>02</span><h3>Model</h3><p>Transform data into analytical structures using SQL, joins, keys and warehouse-oriented modeling patterns.</p></article>
+      <article><span>03</span><h3>Tune</h3><p>Improve SQL performance using indexing and partitioning techniques alongside job scheduling and monitoring.</p></article>
+      <article><span>04</span><h3>Ship</h3><p>Use Git, Azure Boards, TDD practices and CI/CD within Agile/Scrum delivery.</p></article>
     </div>
   </dialog>
 </body>
