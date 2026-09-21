@@ -1,58 +1,10 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.site-nav');
-
-if (menuToggle && nav) {
-  menuToggle.addEventListener('click', () => {
-    const open = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', String(!open));
-    nav.classList.toggle('open', !open);
-    document.body.classList.toggle('menu-open', !open);
-  });
-
-  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    menuToggle.setAttribute('aria-expanded', 'false');
-    nav.classList.remove('open');
-    document.body.classList.remove('menu-open');
-  }));
-}
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-const sectionIds = ['experience', 'work', 'stack', 'contact'];
-const navLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
-    }
-  });
-}, { rootMargin: '-38% 0px -55% 0px', threshold: 0 });
-sectionIds.map(id => document.getElementById(id)).filter(Boolean).forEach(section => sectionObserver.observe(section));
-
-document.querySelectorAll('.project-open').forEach(button => {
-  button.addEventListener('click', () => {
-    const dialog = document.getElementById(button.dataset.dialog);
-    if (dialog) dialog.showModal();
-  });
-});
-
-document.querySelectorAll('.project-dialog').forEach(dialog => {
-  const close = dialog.querySelector('.dialog-close');
-  close?.addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', event => {
-    const rect = dialog.getBoundingClientRect();
-    const inside = event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
-    if (!inside) dialog.close();
-  });
-});
+const q=(s,c=document)=>c.querySelector(s),qa=(s,c=document)=>[...c.querySelectorAll(s)];
+const header=q('.topbar'),progress=q('.scroll-progress span'),menuBtn=q('.menu-button'),mobileMenu=q('#mobile-menu');
+const onScroll=()=>{const y=scrollY;header?.classList.toggle('scrolled',y>18);const m=document.documentElement.scrollHeight-innerHeight;if(progress)progress.style.width=`${m>0?(y/m)*100:0}%`};onScroll();addEventListener('scroll',onScroll,{passive:true});
+menuBtn?.addEventListener('click',()=>{const o=menuBtn.getAttribute('aria-expanded')==='true';menuBtn.setAttribute('aria-expanded',String(!o));mobileMenu.hidden=o;document.body.classList.toggle('menu-open',!o)});
+qa('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{menuBtn?.setAttribute('aria-expanded','false');mobileMenu.hidden=true;document.body.classList.remove('menu-open')}));
+q('#year').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});qa('.reveal').forEach(el=>io.observe(el));
+const sections=qa('section[id]'),links=qa('.desktop-nav a');const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===`#${e.target.id}`))}),{rootMargin:'-35% 0px -58% 0px'});sections.forEach(s=>spy.observe(s));
+qa('.case-open').forEach(b=>b.addEventListener('click',()=>q(`#${b.dataset.dialog}`)?.showModal()));qa('.project-dialog').forEach(d=>{q('.dialog-close',d)?.addEventListener('click',()=>d.close());d.addEventListener('click',e=>{const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()})});
+const fine=matchMedia('(pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches;if(fine){qa('[data-tilt]').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(1100px) rotateX(${(-y*3.2).toFixed(2)}deg) rotateY(${(x*3.8).toFixed(2)}deg) translateY(-2px)`});c.addEventListener('pointerleave',()=>c.style.transform='')});qa('.magnetic').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=e.clientX-(r.left+r.width/2),y=e.clientY-(r.top+r.height/2);el.style.transform=`translate(${x*.06}px,${y*.08}px)`});el.addEventListener('pointerleave',()=>el.style.transform='')})}
